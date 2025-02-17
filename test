@@ -1,0 +1,14 @@
+curl 'https://prod-api.myalice.ai/api/analytics/projects/343/get-whatsapp-template-activity-logs?platform=20587&start=2025-01-19T00:00:00&end=2025-01-26T23:59:59&limit=10&offset=0&template_ids=497769326229355,1101822131320282,1010667070702193&search=&status=all' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDM4MDk3LCJpYXQiOjE3MzkwMTY0OTcsImp0aSI6IjNhZmEwNjJlMDU3NDRlNjg4MDA4YzM0OWY1NjM5NWNjIiwidXNlcl9pZCI6MTQ4NzF9.wXOcyrtrbPB29v9fj19r4IMpm2HrQMECbSqBCoIoTIw' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
