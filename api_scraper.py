@@ -15,21 +15,18 @@ def parse_curl(curl_command):
     # Remove backslash-newline continuations and extra spaces.
     command = curl_command.replace("\\\n", " ").strip()
 
-    # Try using shlex.split with default (posix=True) and if error occurs, fall back to posix=False.
+    # Try splitting using shlex.split; if there is an error (e.g. no closing quotation), fall back to posix=False.
     try:
         tokens = shlex.split(command)
     except ValueError as e:
-        # Fallback: use posix=False which is less strict about quotes.
         tokens = shlex.split(command, posix=False)
 
-    # Initialize values.
     url = None
     method = None
     headers = []
     data = None
 
-    # The first token should be "curl"
-    i = 1
+    i = 1  # skip the "curl" token
     while i < len(tokens):
         token = tokens[i]
         if token.startswith("http"):
@@ -51,7 +48,6 @@ def parse_curl(curl_command):
         elif token in ("-H", "--header"):
             i += 1
             header_line = tokens[i]
-            # Split header line into key and value.
             if ": " in header_line:
                 key, value = header_line.split(": ", 1)
             elif ":" in header_line:
@@ -61,7 +57,6 @@ def parse_curl(curl_command):
             headers.append({"name": key.strip(), "value": value.strip()})
         i += 1
 
-    # If method is not set, assume POST if there's data, otherwise GET.
     if method is None:
         method = "POST" if data is not None else "GET"
 
@@ -78,34 +73,73 @@ def generate_hopscotch_collection(curl_commands_text):
     Given a multi-line string with one or more curl commands,
     parse each one and return a dictionary in the hopscotch collection format.
     For non-login requests, an Authorization header is always added.
-    Also, the base URL "https://pre-prod-api.myalice.ai" is replaced with <<BASE_URL>>.
+    Also, the base URL "https://pre-prod-api.myalice.ai" is replaced with <<PRE_PROD_URL>>.
+    If the endpoint contains query parameters (after a "?"),
+    they are stripped from the endpoint and added as header entries.
+    The token in the Authorization header is replaced with a placeholder.
+    If duplicate request names are encountered, only the first request is kept.
     """
     # Split the text into individual curl commands.
     curl_commands = re.split(r"(?m)^(?=curl )", curl_commands_text)
     curl_commands = [cmd.strip() for cmd in curl_commands if cmd.strip()]
 
     requests_list = []
+    seen_names = set()  # Track duplicate names
+
     for idx, cmd in enumerate(curl_commands, start=1):
         parsed = parse_curl(cmd)
         method = parsed["method"].upper()
 
-        # Replace the base URL if present.
-        endpoint = parsed["endpoint"]
+        # Process the endpoint URL.
+        original_endpoint = parsed["endpoint"]
+        endpoint = original_endpoint
+        query_param_headers = []
+        if endpoint and "?" in endpoint:
+            # Split at "?" to remove query parameters from the endpoint.
+            base, query = endpoint.split("?", 1)
+            endpoint = base
+            # Parse query parameters and create header entries.
+            for param in query.split("&"):
+                if "=" in param:
+                    key, value = param.split("=", 1)
+                else:
+                    key, value = param, ""
+                query_param_headers.append(
+                    {"key": key, "value": value, "active": True, "description": ""}
+                )
+
+        # Replace the base URL with <<PRE_PROD_URL>> if applicable.
         if endpoint and endpoint.startswith("https://pre-prod-api.myalice.ai"):
             endpoint = endpoint.replace(
-                "https://pre-prod-api.myalice.ai", "<<STAGE_URL>>"
+                "https://pre-prod-api.myalice.ai", "<<PRE_PROD_URL>>"
             )
 
-        # Derive a name from the original endpoint (using the last segment) or a generic one.
-        if parsed["endpoint"]:
-            name = parsed["endpoint"].rstrip("/").split("/")[-1]
+        # Derive a name from the original endpoint (strip query parameters first).
+        if original_endpoint:
+            endpoint_for_name = original_endpoint.split("?", 1)[
+                0
+            ]  # Remove query params.
+            segments = endpoint_for_name.rstrip("/").split("/")
+            if segments:
+                # If the last segment is numeric and there's a preceding segment, combine them.
+                if segments[-1].isdigit() and len(segments) >= 2:
+                    name = segments[-2] + "/" + segments[-1]
+                else:
+                    name = segments[-1]
+            else:
+                name = f"Request {idx}"
         else:
             name = f"Request {idx}"
 
-        # Determine if this is a login request.
-        is_login = parsed["endpoint"] and "login" in parsed["endpoint"].lower()
+        # Skip if a request with this name was already added.
+        if name in seen_names:
+            continue
+        seen_names.add(name)
 
-        # Find the Authorization header value from the parsed headers (if any).
+        # Determine if this is a login request.
+        is_login = original_endpoint and "login" in original_endpoint.lower()
+
+        # Look for the Authorization header value in the parsed headers.
         auth_header_value = None
         for h in parsed["headers"]:
             if h["name"].lower() == "authorization":
@@ -117,6 +151,9 @@ def generate_hopscotch_collection(curl_commands_text):
         if not is_login:
             if auth_header_value is None:
                 auth_header_value = ""  # Default to empty if not provided.
+            # Replace the token value with placeholder if it starts with "Token ".
+            if auth_header_value.startswith("Token "):
+                auth_header_value = "Token <<TOKEN>>"
             formatted_auth_header = {
                 "key": "Authorization",
                 "value": auth_header_value,
@@ -128,7 +165,6 @@ def generate_hopscotch_collection(curl_commands_text):
         if method == "GET":
             body_obj = {"contentType": None, "body": None}
         else:
-            # For non-GET, find content-type if provided.
             content_type = ""
             for h in parsed["headers"]:
                 if h["name"].lower() == "content-type":
@@ -152,16 +188,19 @@ def generate_hopscotch_collection(curl_commands_text):
             "responses": {},
         }
 
-        # Add the Authorization header for non-login requests.
+        # For non-login requests, add the Authorization header.
         if formatted_auth_header is not None:
             request_obj["headers"].append(formatted_auth_header)
+        # Add query parameter headers (if any) regardless of login.
+        if query_param_headers:
+            request_obj["headers"].extend(query_param_headers)
 
         requests_list.append(request_obj)
 
     # Build the final hopscotch collection object.
     collection = {
         "v": 6,
-        "name": "Converted Collection",
+        "name": "Inbox",
         "folders": [],
         "requests": requests_list,
         "auth": {"authType": "none", "authActive": True},

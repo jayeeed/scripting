@@ -1,0 +1,22 @@
+{
+  "id": "1o2aqmhasg8",
+  "v": 1,
+  "name": "PRE_PROD",
+  "variables": [
+    {
+      "key": "PRE_PROD_URL",
+      "value": "https://pre-prod-api.myalice.ai",
+      "secret": false
+    },
+    {
+      "key": "PROD_URL",
+      "value": "https://prod-api.myalice.ai",
+      "secret": false
+    },
+    {
+      "key": "TOKEN",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+      "secret": false
+    }
+  ]
+}

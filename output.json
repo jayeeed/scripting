@@ -1,13 +1,13 @@
 {
   "v": 6,
-  "name": "Converted Collection",
+  "name": "Inbox",
   "folders": [],
   "requests": [
     {
       "v": "11",
       "name": "login",
       "method": "POST",
-      "endpoint": "<<STAGE_URL>>/api/accounts/login",
+      "endpoint": "<<PRE_PROD_URL>>/api/accounts/login",
       "params": [],
       "headers": [],
       "preRequestScript": "",
@@ -27,39 +27,12 @@
       "v": "11",
       "name": "info",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/accounts/info",
+      "endpoint": "<<PRE_PROD_URL>>/api/accounts/info",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "info",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/accounts/info",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -81,12 +54,12 @@
       "v": "11",
       "name": "plans",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/billing/plans",
+      "endpoint": "<<PRE_PROD_URL>>/api/billing/plans",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -108,12 +81,12 @@
       "v": "11",
       "name": "teams",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/dashboard/teams",
+      "endpoint": "<<PRE_PROD_URL>>/api/dashboard/teams",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -135,12 +108,12 @@
       "v": "11",
       "name": "permissions",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/bots/projects/1996/permissions",
+      "endpoint": "<<PRE_PROD_URL>>/api/bots/projects/1996/permissions",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -162,12 +135,12 @@
       "v": "11",
       "name": "details",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/dashboard/team/1996/details",
+      "endpoint": "<<PRE_PROD_URL>>/api/dashboard/team/1996/details",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -189,66 +162,12 @@
       "v": "11",
       "name": "access",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/bots/projects/1996/access",
+      "endpoint": "<<PRE_PROD_URL>>/api/bots/projects/1996/access",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "access",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/bots/projects/1996/access",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "permissions",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/bots/projects/1996/permissions",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -270,12 +189,12 @@
       "v": "11",
       "name": "ticket-assignment-count",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/dashboard/projects/1996/ticket-assignment-count",
+      "endpoint": "<<PRE_PROD_URL>>/edge/dashboard/projects/1996/ticket-assignment-count",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -297,12 +216,12 @@
       "v": "11",
       "name": "platform-ticket-assignment-reports",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/dashboard/projects/1996/platform-ticket-assignment-reports",
+      "endpoint": "<<PRE_PROD_URL>>/edge/dashboard/projects/1996/platform-ticket-assignment-reports",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -324,12 +243,12 @@
       "v": "11",
       "name": "assigned-agents",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/dashboard/projects/1996/assigned-agents",
+      "endpoint": "<<PRE_PROD_URL>>/edge/dashboard/projects/1996/assigned-agents",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -351,12 +270,12 @@
       "v": "11",
       "name": "get-inbox-preset-filters",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/get-inbox-preset-filters",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/1996/get-inbox-preset-filters",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -376,14 +295,98 @@
     },
     {
       "v": "11",
-      "name": "tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=",
+      "name": "tickets",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/1996/tickets",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "desc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "",
           "active": true,
           "description": ""
         }
@@ -405,12 +408,12 @@
       "v": "11",
       "name": "ticket-tags",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/ticket-tags",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/1996/ticket-tags",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -432,12 +435,12 @@
       "v": "11",
       "name": "groups",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/bots/projects/1996/groups",
+      "endpoint": "<<PRE_PROD_URL>>/edge/bots/projects/1996/groups",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -459,12 +462,12 @@
       "v": "11",
       "name": "get-channels",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/channels/projects/1996/get-channels",
+      "endpoint": "<<PRE_PROD_URL>>/edge/channels/projects/1996/get-channels",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -486,39 +489,12 @@
       "v": "11",
       "name": "canned-responses",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/canned-responses",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/1996/canned-responses",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "ticket-tags",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/ticket-tags",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -540,12 +516,12 @@
       "v": "11",
       "name": "copilot-history",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/tickets/13659/copilot-history",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13659/copilot-history",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -565,14 +541,20 @@
     },
     {
       "v": "11",
-      "name": "get-conversation?limit=100",
+      "name": "get-conversation",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/tickets/13659/get-conversation?limit=100",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13659/get-conversation",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "limit",
+          "value": "100",
           "active": true,
           "description": ""
         }
@@ -594,12 +576,12 @@
       "v": "11",
       "name": "meta",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/bots/customers/25818/meta",
+      "endpoint": "<<PRE_PROD_URL>>/edge/bots/customers/25818/meta",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -619,14 +601,26 @@
     },
     {
       "v": "11",
-      "name": "25818?limit=10&offset=0",
+      "name": "customer/25818",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/form/entries/customer/25818?limit=10&offset=0",
+      "endpoint": "<<PRE_PROD_URL>>/edge/form/entries/customer/25818",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "limit",
+          "value": "10",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
           "active": true,
           "description": ""
         }
@@ -648,39 +642,12 @@
       "v": "11",
       "name": "attributes",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/attributes",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/1996/attributes",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "access",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/bots/projects/1996/access",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -702,12 +669,12 @@
       "v": "11",
       "name": "data_lab",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/bots/projects/1996/data_lab",
+      "endpoint": "<<PRE_PROD_URL>>/api/bots/projects/1996/data_lab",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -729,12 +696,12 @@
       "v": "11",
       "name": "get-ticket-configuration",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/bots/projects/1996/get-ticket-configuration",
+      "endpoint": "<<PRE_PROD_URL>>/api/bots/projects/1996/get-ticket-configuration",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -756,12 +723,12 @@
       "v": "11",
       "name": "country-list",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/accounts/country-list",
+      "endpoint": "<<PRE_PROD_URL>>/api/accounts/country-list",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -783,12 +750,12 @@
       "v": "11",
       "name": "timezone-list",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/accounts/timezone-list",
+      "endpoint": "<<PRE_PROD_URL>>/api/accounts/timezone-list",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -808,743 +775,20 @@
     },
     {
       "v": "11",
-      "name": "details",
+      "name": "ticket-count-of-agent",
       "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/dashboard/team/1996/details",
+      "endpoint": "<<PRE_PROD_URL>>/edge/dashboard/projects/1996/ticket-count-of-agent",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "ticket-count-of-agent?agent_id=1819",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/dashboard/projects/1996/ticket-count-of-agent?agent_id=1819",
-      "params": [],
-      "headers": [
+        },
         {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "info",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/accounts/info",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "plans",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/billing/plans",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "teams",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/dashboard/teams",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "access",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/bots/projects/1996/access",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "ticket-assignment-count",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/dashboard/projects/1996/ticket-assignment-count",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "platform-ticket-assignment-reports",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/dashboard/projects/1996/platform-ticket-assignment-reports",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "assigned-agents",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/dashboard/projects/1996/assigned-agents",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "get-inbox-preset-filters",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/get-inbox-preset-filters",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "ticket-tags",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/ticket-tags",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "copilot-history",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/tickets/13659/copilot-history",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "get-conversation?limit=100",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/tickets/13659/get-conversation?limit=100",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "meta",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/bots/customers/25818/meta",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "25818?limit=10&offset=0",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/form/entries/customer/25818?limit=10&offset=0",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "groups",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/bots/projects/1996/groups",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "get-channels",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/channels/projects/1996/get-channels",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "canned-responses",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/canned-responses",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "copilot-history",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/tickets/13659/copilot-history",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "get-conversation?limit=100",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/tickets/13659/get-conversation?limit=100",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "meta",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/bots/customers/25818/meta",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "25818?limit=10&offset=0",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/form/entries/customer/25818?limit=10&offset=0",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "ticket-tags",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/ticket-tags",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "attributes",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/crm/projects/1996/attributes",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "access",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/edge/bots/projects/1996/access",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "data_lab",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/bots/projects/1996/data_lab",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": null,
-        "body": null
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
-      "name": "get-ticket-configuration",
-      "method": "GET",
-      "endpoint": "<<STAGE_URL>>/api/bots/projects/1996/get-ticket-configuration",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "key": "agent_id",
+          "value": "1819",
           "active": true,
           "description": ""
         }
@@ -1566,12 +810,12 @@
       "v": "11",
       "name": "messenger-chat",
       "method": "POST",
-      "endpoint": "<<STAGE_URL>>/edge/crm/tickets/13659/messenger-chat",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13659/messenger-chat",
       "params": [],
       "headers": [
         {
           "key": "Authorization",
-          "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5ODI2NDI2LCJpYXQiOjE3Mzk4MDQ4MjYsImp0aSI6ImFiNGQyODZmNjA4NTRjZjRiZGY2NWY1MjM5NjE3ZTllIiwidXNlcl9pZCI6MTgxOX0.2GXG9FS7crdtyYTg3dy0aDUvqIGfSpOII9rmBV0Q7rc",
+          "value": "Token <<TOKEN>>",
           "active": true,
           "description": ""
         }
@@ -1595,5 +839,5 @@
     "authActive": true
   },
   "headers": [],
-  "_ref_id": "coll_bf4414f2b30b4df990d104cfa55af2d1"
+  "_ref_id": "coll_9ffb08a49a6245c08e114e66b8b0eb04"
 }
