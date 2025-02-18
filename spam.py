@@ -1,15 +1,30 @@
 import requests
 import time
+from concurrent.futures import ThreadPoolExecutor
+from requests.adapters import HTTPAdapter
+
+# Configuration
+req = 10000
+workers = 10
+url = "http://127.0.0.1:8000/request/"
+
 
 session = requests.Session()
+adapter = HTTPAdapter(pool_connections=workers, pool_maxsize=workers * 5)
+session.mount("http://", adapter)
 
-req = 1000
+
+def send_request():
+    try:
+        response = session.get(url)
+    except requests.exceptions.RequestException as e:
+        print(f"Request failed: {e}")
+
 
 while True:
     start = time.time()
-    for _ in range(req):
-        try:
-            response = session.get("http://127.0.0.1:8000/request/")
-        except requests.exceptions.RequestException as e:
-            print(f"Request failed: {e}")
+
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        executor.map(lambda _: send_request(), range(req))
+
     print(f"Sent {req} requests in {time.time() - start:.2f} seconds")
