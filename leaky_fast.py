@@ -3,6 +3,7 @@ import time
 import itertools
 import threading
 import asyncio
+from contextlib import asynccontextmanager
 
 app = FastAPI()
 
@@ -38,15 +39,32 @@ class LeakyBucket:
 
     def get_status(self):
         """Return the current number of requests in the bucket."""
-        self.leak()  # Update the bucket before reporting status
+        self.leak()  # Ensure bucket is updated before reporting status
         return self.water
 
 
 NUM_CHANNELS = 4
-channels = {i: LeakyBucket(capacity=1000, leak_rate=400) for i in range(NUM_CHANNELS)}
-
-# Round-robin iterator for channel selection
+channels = {i: LeakyBucket(capacity=10000, leak_rate=1) for i in range(NUM_CHANNELS)}
 channel_iterator = itertools.cycle(range(NUM_CHANNELS))
+
+
+async def leak_continuously():
+    """Continuously leaks requests from all buckets even if no new requests are sent."""
+    while True:
+        for bucket in channels.values():
+            bucket.leak()
+        await asyncio.sleep(1)  # Run leak every 1 second
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Start background leak task on startup."""
+    leak_task = asyncio.create_task(leak_continuously())  # Run leak in background
+    yield
+    leak_task.cancel()  # Cancel on shutdown
+
+
+app = FastAPI(lifespan=lifespan)
 
 
 @app.get("/request/")
@@ -73,6 +91,6 @@ async def websocket_status(websocket: WebSocket):
                 f"channel_{i}": channels[i].get_status() for i in range(NUM_CHANNELS)
             }
             await websocket.send_json(status)
-            await asyncio.sleep(3)
+            await asyncio.sleep(3)  # Send updates every 3 seconds
     except Exception as e:
         print(f"WebSocket disconnected: {e}")
