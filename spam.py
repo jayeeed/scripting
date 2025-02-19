@@ -4,8 +4,8 @@ from concurrent.futures import ThreadPoolExecutor
 from requests.adapters import HTTPAdapter
 
 # Configuration
-req = 10000
-workers = 10
+req = 100
+workers = 2
 url = "http://127.0.0.1:8000/request/"
 
 

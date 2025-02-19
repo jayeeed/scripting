@@ -44,7 +44,7 @@ class LeakyBucket:
 
 
 NUM_CHANNELS = 4
-channels = {i: LeakyBucket(capacity=10000, leak_rate=1) for i in range(NUM_CHANNELS)}
+channels = {i: LeakyBucket(capacity=1000, leak_rate=100) for i in range(NUM_CHANNELS)}
 channel_iterator = itertools.cycle(range(NUM_CHANNELS))
 
 

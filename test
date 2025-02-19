@@ -1,7 +1,7 @@
-curl 'https://prod-api.myalice.ai/api/analytics/projects/343/get-whatsapp-template-activity-logs?platform=20587&start=2025-01-19T00:00:00&end=2025-01-26T23:59:59&limit=10&offset=0&template_ids=497769326229355,1101822131320282,1010667070702193&search=&status=all' \
+curl 'https://prod-api.myalice.ai/api/analytics/projects/343/get-whatsapp-template-activity-logs?platform=20587&start=2025-01-19T00:00:00&end=2025-01-26T23:59:59&limit=10&offset=0&template_ids=522884837142797,1010667070702193,526923119657927&search=&status=all' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MDM4MDk3LCJpYXQiOjE3MzkwMTY0OTcsImp0aSI6IjNhZmEwNjJlMDU3NDRlNjg4MDA4YzM0OWY1NjM5NWNjIiwidXNlcl9pZCI6MTQ4NzF9.wXOcyrtrbPB29v9fj19r4IMpm2HrQMECbSqBCoIoTIw' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5OTgwMDI5LCJpYXQiOjE3Mzk5NTg0MjksImp0aSI6IjAxMjQxMzAwZDZjODQ2NmJhOWU2OWE4ZjRhN2Y4NzkyIiwidXNlcl9pZCI6MTQ4NzF9.r6bujURa8xGfQCvVULMeTZzuRSk8yjkvK6KAt3-7kjc' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
