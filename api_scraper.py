@@ -8,11 +8,11 @@ def process_endpoint(original_endpoint: str):
     """
     Process the original endpoint URL.
     - Strips query parameters from the endpoint.
-    - Returns (clean_endpoint, query_headers) where:
+    - Returns (clean_endpoint, query_params) where:
          clean_endpoint: endpoint without query string.
-         query_headers: list of header entries for each query parameter.
+         query_params: list of parameter entries for each query parameter.
     """
-    query_headers = []
+    query_params = []
     if original_endpoint and "?" in original_endpoint:
         base, query = original_endpoint.split("?", 1)
         for param in query.split("&"):
@@ -20,11 +20,11 @@ def process_endpoint(original_endpoint: str):
                 key, value = param.split("=", 1)
             else:
                 key, value = param, ""
-            query_headers.append(
+            query_params.append(
                 {"key": key, "value": value, "active": True, "description": ""}
             )
-        return base, query_headers
-    return original_endpoint, query_headers
+        return base, query_params
+    return original_endpoint, query_params
 
 
 def derive_request_name(original_endpoint: str, idx: int) -> str:
@@ -37,7 +37,6 @@ def derive_request_name(original_endpoint: str, idx: int) -> str:
     """
     if not original_endpoint:
         return f"Request {idx}"
-    # Remove query parameters
     endpoint_no_query = original_endpoint.split("?", 1)[0]
     segments = endpoint_no_query.rstrip("/").split("/")
     if segments:
@@ -124,22 +123,22 @@ def generate_hopscotch_collection(curl_commands_text: str) -> dict:
     Generate a hopscotch collection from the provided curl commands text.
     - For non-login requests, adds a normalized Authorization header.
     - Replaces the base URL "https://pre-prod-api.myalice.ai" with <<PRE_PROD_URL>>.
-    - Strips query parameters from the endpoint and adds them as header entries.
-    - If duplicate request names are encountered, only the first occurrence is kept.
+    - Moves query parameters to the "params" field.
+    - Only the token (Authorization header) is kept in "headers".
+    - All requests are kept (even if duplicate names occur).
     """
     curl_commands = re.split(r"(?m)^(?=curl )", curl_commands_text)
     curl_commands = [cmd.strip() for cmd in curl_commands if cmd.strip()]
 
     requests_list = []
-    seen_names = set()
 
     for idx, cmd in enumerate(curl_commands, start=1):
         parsed = parse_curl(cmd)
         method = parsed["method"].upper()
         original_endpoint = parsed["endpoint"]
 
-        # Process the endpoint URL: remove query parameters.
-        endpoint_clean, query_headers = process_endpoint(original_endpoint)
+        # Process the endpoint: remove query parameters and create parameter entries.
+        endpoint_clean, query_params = process_endpoint(original_endpoint)
         # Replace the base URL with <<PRE_PROD_URL>>.
         if endpoint_clean and endpoint_clean.startswith(
             "https://pre-prod-api.myalice.ai"
@@ -150,9 +149,6 @@ def generate_hopscotch_collection(curl_commands_text: str) -> dict:
 
         # Derive the request name.
         name = derive_request_name(original_endpoint, idx)
-        if name in seen_names:
-            continue  # Skip duplicate names.
-        seen_names.add(name)
 
         # Determine if this is a login request.
         is_login = original_endpoint and "login" in original_endpoint.lower()
@@ -193,8 +189,8 @@ def generate_hopscotch_collection(curl_commands_text: str) -> dict:
             "name": name,
             "method": method,
             "endpoint": endpoint_clean,
-            "params": [],
-            "headers": [],
+            "params": query_params,  # Query parameters are now in "params"
+            "headers": [],  # Only token Authorization header is kept here
             "preRequestScript": "",
             "testScript": "",
             "auth": {"authType": "inherit", "authActive": True},
@@ -204,8 +200,6 @@ def generate_hopscotch_collection(curl_commands_text: str) -> dict:
         }
         if not is_login and formatted_auth_header is not None:
             request_obj["headers"].append(formatted_auth_header)
-        if query_headers:
-            request_obj["headers"].extend(query_headers)
 
         requests_list.append(request_obj)
 

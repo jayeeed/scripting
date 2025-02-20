@@ -4,13 +4,14 @@ from concurrent.futures import ThreadPoolExecutor
 from requests.adapters import HTTPAdapter
 
 # Configuration
-req = 100
-workers = 2
+req = 1000
+workers = 4
 url = "http://127.0.0.1:8000/request/"
 
 
 session = requests.Session()
-adapter = HTTPAdapter(pool_connections=workers, pool_maxsize=workers * 5)
+adapter = HTTPAdapter(pool_connections=workers, pool_maxsize=workers * 4)
+# adapter = HTTPAdapter(pool_connections=workers)
 session.mount("http://", adapter)
 
 
