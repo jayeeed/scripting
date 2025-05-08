@@ -1,19 +1,3 @@
-curl 'https://pre-prod-api.myalice.ai/api/accounts/logout' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMDY4LCJpYXQiOjE3NDAwMzk0NjgsImp0aSI6IjUxOTVmNzkzN2QwOTQ1YjA4ODIzMDk2MjI5MDk5ZTNmIiwidXNlcl9pZCI6MTgxOX0.Rbb3QK3lZlcYmFqBgMpWpKC4pG1GxkjmtqfQeAoBmjo' \
-  -H 'content-type: application/json' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
-  --data-raw '{"refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MjYzMTQ2OCwiaWF0IjoxNzQwMDM5NDY4LCJqdGkiOiJlYmY4Yzc3Mjc4M2U0YWNkOWViMTZhZmE0ZjhmNWRlMiIsInVzZXJfaWQiOjE4MTl9.4_utWJJsK7xp4cP4-zGsLrsjFqQdWCeUv4J9NnsNg8s"}' ;
 curl 'https://pre-prod-api.myalice.ai/api/accounts/login' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
@@ -32,7 +16,7 @@ curl 'https://pre-prod-api.myalice.ai/api/accounts/login' \
 curl 'https://pre-prod-api.myalice.ai/api/accounts/info' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -46,7 +30,21 @@ curl 'https://pre-prod-api.myalice.ai/api/accounts/info' \
 curl 'https://pre-prod-api.myalice.ai/api/accounts/info' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/bots/projects/undefined/access' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -60,7 +58,7 @@ curl 'https://pre-prod-api.myalice.ai/api/accounts/info' \
 curl 'https://pre-prod-api.myalice.ai/api/billing/plans' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -74,7 +72,7 @@ curl 'https://pre-prod-api.myalice.ai/api/billing/plans' \
 curl 'https://pre-prod-api.myalice.ai/api/dashboard/teams' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -88,7 +86,7 @@ curl 'https://pre-prod-api.myalice.ai/api/dashboard/teams' \
 curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/permissions' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -102,7 +100,7 @@ curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/permissions' \
 curl 'https://pre-prod-api.myalice.ai/api/dashboard/team/900/details' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -116,7 +114,7 @@ curl 'https://pre-prod-api.myalice.ai/api/dashboard/team/900/details' \
 curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/access' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -130,7 +128,21 @@ curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/access' \
 curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/access' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/permissions' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -144,7 +156,7 @@ curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/access' \
 curl 'https://pre-prod-api.myalice.ai/edge/dashboard/projects/900/ticket-assignment-count' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -158,7 +170,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/dashboard/projects/900/ticket-assignm
 curl 'https://pre-prod-api.myalice.ai/edge/dashboard/projects/900/platform-ticket-assignment-reports' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -172,7 +184,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/dashboard/projects/900/platform-ticke
 curl 'https://pre-prod-api.myalice.ai/edge/dashboard/projects/900/assigned-agents' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -186,7 +198,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/dashboard/projects/900/assigned-agent
 curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/get-inbox-preset-filters' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -200,7 +212,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/get-inbox-preset-fil
 curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -214,7 +226,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&of
 curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/ticket-tags' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -228,7 +240,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/ticket-tags' \
 curl 'https://pre-prod-api.myalice.ai/edge/bots/projects/900/groups' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -242,7 +254,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/bots/projects/900/groups' \
 curl 'https://pre-prod-api.myalice.ai/edge/channels/projects/900/get-channels' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -256,7 +268,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/channels/projects/900/get-channels' \
 curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/canned-responses' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -270,7 +282,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/canned-responses' \
 curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/copilot-history' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -284,7 +296,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/copilot-history' \
 curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/get-conversation?limit=100' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -298,7 +310,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/get-conversation?li
 curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/25765/meta' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -312,7 +324,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/25765/meta' \
 curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -326,7 +338,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list'
 curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25765?limit=10&offset=0' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -340,7 +352,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25765?limit=10&
 curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/ticket-tags' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -354,7 +366,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/ticket-tags' \
 curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/attributes' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -368,7 +380,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/attributes' \
 curl 'https://pre-prod-api.myalice.ai/edge/bots/projects/900/access' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -382,7 +394,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/bots/projects/900/access' \
 curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/data_lab' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -396,7 +408,7 @@ curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/data_lab' \
 curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/get-ticket-configuration' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -410,7 +422,7 @@ curl 'https://pre-prod-api.myalice.ai/api/bots/projects/900/get-ticket-configura
 curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/ecommerce-info' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -424,7 +436,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/ecommerce-i
 curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -439,7 +451,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
   -X 'PATCH' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'content-type: application/json' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
@@ -451,12 +463,12 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-site' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
-  --data-raw '{"full_name":"Elsa Anna","email":"jayed@myalice.ai","phone":"01684639365"}' ;
+  --data-raw '{"full_name":"Elsa Annaa","email":"","phone":"01684639365"}' ;
 curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
   -X 'PATCH' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'content-type: application/json' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
@@ -468,12 +480,12 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-site' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
-  --data-raw '{"full_name":"Elsa Anna","email":"jayed@myalice.aii","phone":"01684639365"}' ;
+  --data-raw '{"full_name":"Elsa Annaa","email":"ex@ma.ai","phone":"01684639365"}' ;
 curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
   -X 'PATCH' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'content-type: application/json' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
@@ -485,11 +497,164 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-site' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
-  --data-raw '{"xyz":"123"}' ;
-curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  --data-raw '{"full_name":"Elsa Annaa","email":"ex@ma.ai","phone":"016846393655"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
+  -X 'PATCH' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"first_name":""}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
+  -X 'PATCH' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"last_name":""}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
+  -X 'PATCH' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"first_name":"Elsa"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
+  -X 'PATCH' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"last_name":"Anna"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
+  -X 'PATCH' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"locale":""}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
+  -X 'PATCH' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"locale":"en-BN"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
+  -X 'PATCH' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"aaa":""}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
+  -X 'PATCH' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"xyz":""}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/customers/25765/update' \
+  -X 'PATCH' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"api":"test"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/projects/900/customer-list?search=&platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -500,10 +665,106 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count'
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-site' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+curl 'https://pre-prod-api.myalice.ai/api/crm/tickets/13680/action-assign' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"agent_id":761,"group_id":null,"note":""}' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/tickets/13680/action-assign' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"agent_id":1819,"group_id":null,"note":""}' ;
+curl 'https://pre-prod-api.myalice.ai/stable/crm/tickets/13680/set-priority' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"priority":2}' ;
+curl 'https://pre-prod-api.myalice.ai/stable/crm/tickets/13680/set-priority' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"priority":3}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/ticket-tags' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"name":"test321"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/tag' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"tags":[2069,2068]}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/search-tickets?search=e' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -514,206 +775,10 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&of
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-site' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/search-tickets?search=elsa' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/17231/ecommerce-info' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/17231/order-list?platform_id=2171' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13484/copilot-history' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13484/get-conversation?limit=100' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/17231/meta' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/17231/order-list?platform_id=2171' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/17231?limit=10&offset=0' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/ecommerce-info' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/copilot-history' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/get-conversation?limit=100' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/25765/meta' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
-  -H 'origin: https://stage.myalice.ai' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://stage.myalice.ai/' \
-  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
-curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25765?limit=10&offset=0' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
   -H 'referer: https://stage.myalice.ai/' \
@@ -727,7 +792,7 @@ curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25765?limit=10&
 curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/messenger-chat' \
   -H 'accept: application/json, text/plain, */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwMDYxMzU2LCJpYXQiOjE3NDAwMzk3NTYsImp0aSI6ImFjZTU1ODdlZjk1ODQ1YzViMTgwOGJjZTQyNGI3MWRhIiwidXNlcl9pZCI6MTgxOX0.cQWzu-Km1pb8QKGiKxAamoW_S0pLg_ef3hgVMvZOheg' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
   -H 'content-type: application/json' \
   -H 'origin: https://stage.myalice.ai' \
   -H 'priority: u=1, i' \
@@ -739,4 +804,1386 @@ curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/messenger-chat' \
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-site' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
-  --data-raw '{"text":"helloooooo","audio":null,"image":null,"template":null,"attachments":[],"action":"direct_message"}'
+  --data-raw '{"text":"search","audio":null,"image":null,"template":null,"attachments":[],"action":"direct_message"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/bulk-action' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"action":"assign","tickets":[13680],"assign_user":1820,"assign_group":0,"tags":[],"queue_data":{"limit":100,"offset":0,"order":"desc","queue":"all","is_resolved":0,"channels":"all","agents":"all","groups":"all","tags":"all","start":"","end":""}}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/ticket-tags' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/tickets/13680/action-assign' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"agent_id":1819,"group_id":null,"note":""}' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/search-customers?search=jaye' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/search-customers?search=j' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/search-customers?search=aa' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/search-customers?search=ex' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/search-customers?search=ex%40' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/search-customers?search=ex%40ma' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/search-customers?search=ex%40ma.ai' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/create-ticket' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"platform_id":"2160","primary_id":"ex@ma.ai"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/search-tickets?search=13778' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgxMDQ3LCJpYXQiOjE3NDA1NTk0NDcsImp0aSI6ImU1ODdlMjc4ODY2YjQwM2I5Y2FiMTU1ODczMTg3NzI5IiwidXNlcl9pZCI6MTgxOX0.skXiZRLlSDYdlo2YDepzu3IzC3bFRYbO7XnaiyuJ26w' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/search-customers?search=jayed%40myalice.ai' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/api/crm/projects/900/create-ticket' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"platform_id":"2160","primary_id":"jayed@myalice.ai"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/search-tickets?search=13782' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25896/ecommerce-info' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13782/copilot-history' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13782/get-conversation?limit=100' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/25896/meta' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25896?limit=10&offset=0' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13782/send-email' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"text":"hi","to":"jayed@myalice.ai","cc_emails":"","bcc_emails":"","subject":"Re: api test","thread_id":"","attachment":[],"action":"direct_message","attachments":[],"recipient_emails":"jayed@myalice.ai","references":"undefined","in_reply_to":""}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/ecommerce-info' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2160' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/copilot-history' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/get-conversation?limit=100' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/25765/meta' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2160' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25765?limit=10&offset=0' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/messenger-chat' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"text":"🙂","audio":null,"image":null,"attachments":[],"template":null,"action":"direct_message"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/messenger-chat' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"image":"https://alice-stagex.s3.ap-southeast-1.amazonaws.com/2mb_82aab1bb39dabad06499de48f42f95.jpeg","audio":null,"video":null,"file":null,"reply_to_message_id":null,"action":"direct_message"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/messenger-chat' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"image":null,"audio":null,"video":"https://alice-stagex.s3.ap-southeast-1.amazonaws.com/2mb_7ca62b7a30bf93852071cc1f5d2dba.mp4","file":null,"reply_to_message_id":null,"action":"direct_message"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/messenger-chat' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"audio":"http://tmp-ap-southeast-1.transloadit.net/d02ba895dfe04d3f99a6466318ac51e3/539288bf7fde4da2b2f5fcf633dd97a1/0205829f28be45dab41cf8a34d15e0f3.mp3","action":"direct_message"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/messenger-chat' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"image":null,"audio":null,"video":null,"file":"https://alice-stagex.s3.ap-southeast-1.amazonaws.com/1mb_44e7a7fd20585e19084376104ee1c7.pdf","reply_to_message_id":null,"action":"direct_message"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/messenger-chat' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"audio":"http://tmp-ap-southeast-1.transloadit.net/d02ba895dfe04d3f99a6466318ac51e3/390de775a8074819b2f4a7e1f374bfa1/78d9c3ce730b43f88d282dc176053b4f.mp3","action":"direct_message"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/projects/900/products?alice_store_id=609873&search=&limit=10' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/ecommerce-info' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/messenger-chat' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
+  --data-raw '{"text":"note","audio":null,"image":null,"attachments":[],"template":null,"action":"write_note"}' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=asc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=2171&agents=1819&groups=all&tags=2068&priorities=3&start=2025-02-25T00:00:00%2B12:00&end=2025-03-01T00:00:00%2B12:00' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=unassigned&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/16385/ecommerce-info' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/16385/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/12009/copilot-history' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/12009/get-conversation?limit=100' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/16385/meta' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/16385/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/16385?limit=10&offset=0' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=1&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/ecommerce-info' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13679/copilot-history' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13679/get-conversation?limit=100' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/25765/meta' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25765?limit=10&offset=0' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=bot&search=&is_resolved=1&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/undefined/ecommerce-info' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/undefined/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=self&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=self&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/ticket-tags' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/ecommerce-info' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/copilot-history' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/get-conversation?limit=100' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/25765/meta' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25765?limit=10&offset=0' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=self&search=&is_resolved=1&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/ecommerce-info' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13679/copilot-history' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13679/get-conversation?limit=100' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/25765/meta' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25765?limit=10&offset=0' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets?limit=100&offset=0&order=desc&queue=all&search=&is_resolved=0&is_on_hold=0&channels=all&agents=all&groups=all&tags=all&priorities=all&start=&end=' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/projects/900/tickets-badge-count' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/ecommerce-info' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/copilot-history' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/crm/tickets/13680/get-conversation?limit=100' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/bots/customers/25765/meta' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/ecommerce/customers/25765/order-list?platform_id=2171' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' ;
+curl 'https://pre-prod-api.myalice.ai/edge/form/entries/customer/25765?limit=10&offset=0' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQwNTgzMjIzLCJpYXQiOjE3NDA1NjE2MjMsImp0aSI6IjBhMzk2NTNlM2YyZDQ4MzdhNDdkZGY2MmJjNTc4ZTI4IiwidXNlcl9pZCI6MTgxOX0.zPwTASxE-Ocu4NQsMUuuchEd3n3OnnbltQH7e9lIC_A' \
+  -H 'origin: https://stage.myalice.ai' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://stage.myalice.ai/' \
+  -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'

@@ -5,33 +5,6 @@
   "requests": [
     {
       "v": "11",
-      "name": "logout",
-      "method": "POST",
-      "endpoint": "<<PRE_PROD_URL>>/api/accounts/logout",
-      "params": [],
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Token <<TOKEN>>",
-          "active": true,
-          "description": ""
-        }
-      ],
-      "preRequestScript": "",
-      "testScript": "",
-      "auth": {
-        "authType": "inherit",
-        "authActive": true
-      },
-      "body": {
-        "contentType": "application/json",
-        "body": "{\"refresh_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MjYzMTQ2OCwiaWF0IjoxNzQwMDM5NDY4LCJqdGkiOiJlYmY4Yzc3Mjc4M2U0YWNkOWViMTZhZmE0ZjhmNWRlMiIsInVzZXJfaWQiOjE4MTl9.4_utWJJsK7xp4cP4-zGsLrsjFqQdWCeUv4J9NnsNg8s\"}"
-      },
-      "requestVariables": [],
-      "responses": {}
-    },
-    {
-      "v": "11",
       "name": "login",
       "method": "POST",
       "endpoint": "<<PRE_PROD_URL>>/api/accounts/login",
@@ -82,6 +55,33 @@
       "name": "info",
       "method": "GET",
       "endpoint": "<<PRE_PROD_URL>>/api/accounts/info",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "access",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/bots/projects/undefined/access",
       "params": [],
       "headers": [
         {
@@ -244,6 +244,33 @@
       "name": "access",
       "method": "GET",
       "endpoint": "<<PRE_PROD_URL>>/api/bots/projects/900/access",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "permissions",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/bots/projects/900/permissions",
       "params": [],
       "headers": [
         {
@@ -967,7 +994,7 @@
       },
       "body": {
         "contentType": "application/json",
-        "body": "{\"full_name\":\"Elsa Anna\",\"email\":\"jayed@myalice.ai\",\"phone\":\"01684639365\"}"
+        "body": "{\"full_name\":\"Elsa Annaa\",\"email\":\"\",\"phone\":\"01684639365\"}"
       },
       "requestVariables": [],
       "responses": {}
@@ -994,7 +1021,7 @@
       },
       "body": {
         "contentType": "application/json",
-        "body": "{\"full_name\":\"Elsa Anna\",\"email\":\"jayed@myalice.aii\",\"phone\":\"01684639365\"}"
+        "body": "{\"full_name\":\"Elsa Annaa\",\"email\":\"ex@ma.ai\",\"phone\":\"01684639365\"}"
       },
       "requestVariables": [],
       "responses": {}
@@ -1021,17 +1048,1845 @@
       },
       "body": {
         "contentType": "application/json",
-        "body": "{\"xyz\":\"123\"}"
+        "body": "{\"full_name\":\"Elsa Annaa\",\"email\":\"ex@ma.ai\",\"phone\":\"016846393655\"}"
       },
       "requestVariables": [],
       "responses": {}
     },
     {
       "v": "11",
-      "name": "tickets-badge-count",
+      "name": "update",
+      "method": "PATCH",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/customers/25765/update",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"first_name\":\"\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "update",
+      "method": "PATCH",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/customers/25765/update",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"last_name\":\"\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "update",
+      "method": "PATCH",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/customers/25765/update",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"first_name\":\"Elsa\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "update",
+      "method": "PATCH",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/customers/25765/update",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"last_name\":\"Anna\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "update",
+      "method": "PATCH",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/customers/25765/update",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"locale\":\"\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "update",
+      "method": "PATCH",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/customers/25765/update",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"locale\":\"en-BN\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "update",
+      "method": "PATCH",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/customers/25765/update",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"aaa\":\"\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "update",
+      "method": "PATCH",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/customers/25765/update",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"xyz\":\"\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "update",
+      "method": "PATCH",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/customers/25765/update",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"api\":\"test\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "customer-list",
       "method": "GET",
-      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/projects/900/customer-list",
+      "params": [
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "platform_id",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "action-assign",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/tickets/13680/action-assign",
       "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"agent_id\":761,\"group_id\":null,\"note\":\"\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "action-assign",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/tickets/13680/action-assign",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"agent_id\":1819,\"group_id\":null,\"note\":\"\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "set-priority",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/stable/crm/tickets/13680/set-priority",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"priority\":2}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "set-priority",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/stable/crm/tickets/13680/set-priority",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"priority\":3}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ticket-tags",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/ticket-tags",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"name\":\"test321\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tag",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/tag",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"tags\":[2069,2068]}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/search-tickets",
+      "params": [
+        {
+          "key": "search",
+          "value": "e",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/search-tickets",
+      "params": [
+        {
+          "key": "search",
+          "value": "elsa",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "messenger-chat",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/messenger-chat",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"text\":\"search\",\"audio\":null,\"image\":null,\"template\":null,\"attachments\":[],\"action\":\"direct_message\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "bulk-action",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/bulk-action",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"action\":\"assign\",\"tickets\":[13680],\"assign_user\":1820,\"assign_group\":0,\"tags\":[],\"queue_data\":{\"limit\":100,\"offset\":0,\"order\":\"desc\",\"queue\":\"all\",\"is_resolved\":0,\"channels\":\"all\",\"agents\":\"all\",\"groups\":\"all\",\"tags\":\"all\",\"start\":\"\",\"end\":\"\"}}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ticket-tags",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/ticket-tags",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "action-assign",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/tickets/13680/action-assign",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"agent_id\":1819,\"group_id\":null,\"note\":\"\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-customers",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/search-customers",
+      "params": [
+        {
+          "key": "search",
+          "value": "jaye",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-customers",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/search-customers",
+      "params": [
+        {
+          "key": "search",
+          "value": "j",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-customers",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/search-customers",
+      "params": [
+        {
+          "key": "search",
+          "value": "aa",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-customers",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/search-customers",
+      "params": [
+        {
+          "key": "search",
+          "value": "ex",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-customers",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/search-customers",
+      "params": [
+        {
+          "key": "search",
+          "value": "ex%40",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-customers",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/search-customers",
+      "params": [
+        {
+          "key": "search",
+          "value": "ex%40ma",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-customers",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/search-customers",
+      "params": [
+        {
+          "key": "search",
+          "value": "ex%40ma.ai",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "create-ticket",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/create-ticket",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"platform_id\":\"2160\",\"primary_id\":\"ex@ma.ai\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/search-tickets",
+      "params": [
+        {
+          "key": "search",
+          "value": "13778",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-customers",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/search-customers",
+      "params": [
+        {
+          "key": "search",
+          "value": "jayed%40myalice.ai",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "create-ticket",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/api/crm/projects/900/create-ticket",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"platform_id\":\"2160\",\"primary_id\":\"jayed@myalice.ai\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "search-tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/search-tickets",
+      "params": [
+        {
+          "key": "search",
+          "value": "13782",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ecommerce-info",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25896/ecommerce-info",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "copilot-history",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13782/copilot-history",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "get-conversation",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13782/get-conversation",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "meta",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/bots/customers/25896/meta",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "customer/25896",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/form/entries/customer/25896",
+      "params": [
+        {
+          "key": "limit",
+          "value": "10",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "send-email",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13782/send-email",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"text\":\"hi\",\"to\":\"jayed@myalice.ai\",\"cc_emails\":\"\",\"bcc_emails\":\"\",\"subject\":\"Re: api test\",\"thread_id\":\"\",\"attachment\":[],\"action\":\"direct_message\",\"attachments\":[],\"recipient_emails\":\"jayed@myalice.ai\",\"references\":\"undefined\",\"in_reply_to\":\"\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ecommerce-info",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/ecommerce-info",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2160",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "copilot-history",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/copilot-history",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "get-conversation",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/get-conversation",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "meta",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/bots/customers/25765/meta",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2160",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "customer/25765",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/form/entries/customer/25765",
+      "params": [
+        {
+          "key": "limit",
+          "value": "10",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "messenger-chat",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/messenger-chat",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"text\":\"\ud83d\ude42\",\"audio\":null,\"image\":null,\"attachments\":[],\"template\":null,\"action\":\"direct_message\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "messenger-chat",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/messenger-chat",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"image\":\"https://alice-stagex.s3.ap-southeast-1.amazonaws.com/2mb_82aab1bb39dabad06499de48f42f95.jpeg\",\"audio\":null,\"video\":null,\"file\":null,\"reply_to_message_id\":null,\"action\":\"direct_message\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "messenger-chat",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/messenger-chat",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"image\":null,\"audio\":null,\"video\":\"https://alice-stagex.s3.ap-southeast-1.amazonaws.com/2mb_7ca62b7a30bf93852071cc1f5d2dba.mp4\",\"file\":null,\"reply_to_message_id\":null,\"action\":\"direct_message\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "messenger-chat",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/messenger-chat",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"audio\":\"http://tmp-ap-southeast-1.transloadit.net/d02ba895dfe04d3f99a6466318ac51e3/539288bf7fde4da2b2f5fcf633dd97a1/0205829f28be45dab41cf8a34d15e0f3.mp3\",\"action\":\"direct_message\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "messenger-chat",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/messenger-chat",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"image\":null,\"audio\":null,\"video\":null,\"file\":\"https://alice-stagex.s3.ap-southeast-1.amazonaws.com/1mb_44e7a7fd20585e19084376104ee1c7.pdf\",\"reply_to_message_id\":null,\"action\":\"direct_message\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "messenger-chat",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/messenger-chat",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"audio\":\"http://tmp-ap-southeast-1.transloadit.net/d02ba895dfe04d3f99a6466318ac51e3/390de775a8074819b2f4a7e1f374bfa1/78d9c3ce730b43f88d282dc176053b4f.mp3\",\"action\":\"direct_message\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "customers/25765",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "products",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/projects/900/products",
+      "params": [
+        {
+          "key": "alice_store_id",
+          "value": "609873",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "limit",
+          "value": "10",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ecommerce-info",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/ecommerce-info",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "messenger-chat",
+      "method": "POST",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/messenger-chat",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": "application/json",
+        "body": "{\"text\":\"note\",\"audio\":null,\"image\":null,\"attachments\":[],\"template\":null,\"action\":\"write_note\"}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "asc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "",
+          "active": true,
+          "description": ""
+        }
+      ],
       "headers": [
         {
           "key": "Authorization",
@@ -1167,6 +3022,284 @@
     },
     {
       "v": "11",
+      "name": "tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "desc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "1819",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "2068",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "3",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "2025-02-25T00:00:00%2B12:00",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "2025-03-01T00:00:00%2B12:00",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets-badge-count",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets-badge-count",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "desc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "unassigned",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
       "name": "tickets-badge-count",
       "method": "GET",
       "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
@@ -1196,7 +3329,7 @@
       "v": "11",
       "name": "ecommerce-info",
       "method": "GET",
-      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/17231/ecommerce-info",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/16385/ecommerce-info",
       "params": [],
       "headers": [
         {
@@ -1223,7 +3356,7 @@
       "v": "11",
       "name": "order-list",
       "method": "GET",
-      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/17231/order-list",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/16385/order-list",
       "params": [
         {
           "key": "platform_id",
@@ -1257,7 +3390,7 @@
       "v": "11",
       "name": "copilot-history",
       "method": "GET",
-      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13484/copilot-history",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/12009/copilot-history",
       "params": [],
       "headers": [
         {
@@ -1284,7 +3417,7 @@
       "v": "11",
       "name": "get-conversation",
       "method": "GET",
-      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13484/get-conversation",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/12009/get-conversation",
       "params": [
         {
           "key": "limit",
@@ -1318,7 +3451,7 @@
       "v": "11",
       "name": "meta",
       "method": "GET",
-      "endpoint": "<<PRE_PROD_URL>>/edge/bots/customers/17231/meta",
+      "endpoint": "<<PRE_PROD_URL>>/edge/bots/customers/16385/meta",
       "params": [],
       "headers": [
         {
@@ -1345,7 +3478,7 @@
       "v": "11",
       "name": "order-list",
       "method": "GET",
-      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/17231/order-list",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/16385/order-list",
       "params": [
         {
           "key": "platform_id",
@@ -1377,9 +3510,9 @@
     },
     {
       "v": "11",
-      "name": "customer/17231",
+      "name": "customer/16385",
       "method": "GET",
-      "endpoint": "<<PRE_PROD_URL>>/edge/form/entries/customer/17231",
+      "endpoint": "<<PRE_PROD_URL>>/edge/form/entries/customer/16385",
       "params": [
         {
           "key": "limit",
@@ -1394,6 +3527,873 @@
           "description": ""
         }
       ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets-badge-count",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "desc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "1",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ecommerce-info",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/ecommerce-info",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "copilot-history",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13679/copilot-history",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "get-conversation",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13679/get-conversation",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "meta",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/bots/customers/25765/meta",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "customer/25765",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/form/entries/customer/25765",
+      "params": [
+        {
+          "key": "limit",
+          "value": "10",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets-badge-count",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "desc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "bot",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "1",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ecommerce-info",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/undefined/ecommerce-info",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/undefined/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets-badge-count",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "desc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "self",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets-badge-count",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "desc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "self",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ticket-tags",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/ticket-tags",
+      "params": [],
       "headers": [
         {
           "key": "Authorization",
@@ -1640,9 +4640,9 @@
     },
     {
       "v": "11",
-      "name": "messenger-chat",
-      "method": "POST",
-      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/messenger-chat",
+      "name": "tickets-badge-count",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
       "params": [],
       "headers": [
         {
@@ -1659,8 +4659,732 @@
         "authActive": true
       },
       "body": {
-        "contentType": "application/json",
-        "body": "{\"text\":\"helloooooo\",\"audio\":null,\"image\":null,\"template\":null,\"attachments\":[],\"action\":\"direct_message\"}"
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "desc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "self",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "1",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ecommerce-info",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/ecommerce-info",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "copilot-history",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13679/copilot-history",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "get-conversation",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13679/get-conversation",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "meta",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/bots/customers/25765/meta",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "customer/25765",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/form/entries/customer/25765",
+      "params": [
+        {
+          "key": "limit",
+          "value": "10",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets-badge-count",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "order",
+          "value": "desc",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "queue",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "search",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_resolved",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "is_on_hold",
+          "value": "0",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "channels",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "agents",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "groups",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "tags",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "priorities",
+          "value": "all",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "start",
+          "value": "",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "end",
+          "value": "",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "tickets-badge-count",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/projects/900/tickets-badge-count",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "ecommerce-info",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/ecommerce-info",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "copilot-history",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/copilot-history",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "get-conversation",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/crm/tickets/13680/get-conversation",
+      "params": [
+        {
+          "key": "limit",
+          "value": "100",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "meta",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/bots/customers/25765/meta",
+      "params": [],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "order-list",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/ecommerce/customers/25765/order-list",
+      "params": [
+        {
+          "key": "platform_id",
+          "value": "2171",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "11",
+      "name": "customer/25765",
+      "method": "GET",
+      "endpoint": "<<PRE_PROD_URL>>/edge/form/entries/customer/25765",
+      "params": [
+        {
+          "key": "limit",
+          "value": "10",
+          "active": true,
+          "description": ""
+        },
+        {
+          "key": "offset",
+          "value": "0",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "key": "Authorization",
+          "value": "Token <<TOKEN>>",
+          "active": true,
+          "description": ""
+        }
+      ],
+      "preRequestScript": "",
+      "testScript": "",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "body": {
+        "contentType": null,
+        "body": null
       },
       "requestVariables": [],
       "responses": {}
@@ -1671,5 +5395,5 @@
     "authActive": true
   },
   "headers": [],
-  "_ref_id": "coll_823cca18660a4546858d83861c2b0448"
+  "_ref_id": "coll_735f4ea0effb49c48a478001d42c6610"
 }
